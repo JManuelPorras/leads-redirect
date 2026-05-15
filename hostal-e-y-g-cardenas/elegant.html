@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Vista previa - Hostal E Y G Cardenas</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif; max-width: 640px; margin: 8vh auto; padding: 0 1.5rem; line-height: 1.55; }
+  h1 { font-size: 1.5rem; font-weight: 600; }
+  p { color: #555; }
+  @media (prefers-color-scheme: dark) { p { color: #aaa; } }
+</style>
+</head>
+<body>
+<script>
+  (function() {
+    var TARGET = "https://complete-decided-crew-barbara.trycloudflare.com/landing-elegant/";
+    var OPEN_HOUR = 9, CLOSE_HOUR = 16;
+    var now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/Havana" }));
+    var h = now.getHours();
+    var inHours = h >= OPEN_HOUR && h < CLOSE_HOUR;
+    if (TARGET && inHours) {
+      location.replace(TARGET);
+    } else {
+      document.body.innerHTML = '<h1>Vista previa fuera de horario</h1>'
+        + '<p>Esta pagina esta disponible cualquier dia entre <strong>9:00 AM y 4:00 PM</strong> (hora de Cuba).</p>'
+        + '<p>Vuelve a este mismo enlace en horario y la veras directamente.</p>'
+        + '<p>- Jose Manuel</p>';
+    }
+  })();
+</script>
+<noscript>
+  <h1>Vista previa</h1>
+  <p>Necesitas JavaScript activado para ver esta pagina. Si no puedes activarlo, contactame y te envio las imagenes directamente.</p>
+</noscript>
+</body>
+</html>
