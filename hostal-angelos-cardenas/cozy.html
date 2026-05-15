@@ -16,13 +16,13 @@
 <body>
 <script>
   (function() {
-    var TUNNEL = "";
+    var TARGET = "https://companion-chance-bulk-zone.trycloudflare.com/landing-cozy/";
     var OPEN_HOUR = 9, CLOSE_HOUR = 16;
     var now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/Havana" }));
     var h = now.getHours();
     var inHours = h >= OPEN_HOUR && h < CLOSE_HOUR;
-    if (TUNNEL && inHours) {
-      location.replace(TUNNEL);
+    if (TARGET && inHours) {
+      location.replace(TARGET);
     } else {
       document.body.innerHTML = '<h1>Vista previa fuera de horario</h1>'
         + '<p>Esta pagina esta disponible cualquier dia entre <strong>9:00 AM y 4:00 PM</strong> (hora de Cuba).</p>'
@@ -33,7 +33,7 @@
 </script>
 <noscript>
   <h1>Vista previa</h1>
-  <p>Necesitas JavaScript activado para ver esta pagina.</p>
+  <p>Necesitas JavaScript activado para ver esta pagina. Si no puedes activarlo, contactame y te envio las imagenes directamente.</p>
 </noscript>
 </body>
 </html>
